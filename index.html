@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"><!--icons bootstrap-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><!--Box Icons-->
+    <title>Portfólio do Carlos</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="/">Meu Portfólio</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                
+            </div>
+
+
+            <ul class="nav-list"> 
+                <li><button class="navbutton" onclick="scrollToElement('topoSite')">Início</button></li>
+                <li><button class="navbutton" onclick="scrollToElement('bio')">Sobre</button></li>
+                <li><button class="navbutton" onclick="scrollToElement('projetos')">Projetos</button></li>
+                <li><button class="navbutton" onclick="scrollToElement('contatos')">Contato</button></li>
+            </ul>
+        </nav>
+        <script src="navbar.js"></script>
+    </header> <!--navBar-->
+
+
+    <section class="topoDoSite" id="topoSite"> 
+        <div class="interface">
+            <div class="flex">
+                <div class="txt-topoSite">
+                    <h1>SEJA O ARQUITETO DA SUA PRÓPRIA REVOLUÇÃO DIGITAL</h1>
+                    <p>  A jornada da vida é uma busca constante pela excelência. Deixe a tecnologia ser sua aliada nessa jornada, pois é através dela que podemos alcançar novos patamares de realização e impacto, moldando um futuro repleto de possibilidades infinitas.</p>
+    
+                <div class="btn-contato">
+                    <a href="#">
+                        <button onclick="scrollToElement('contatos')">Entre em Contato</button>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section class="formações" id="bio">
+        <div class="interface">
+            <div class="flex">
+                <div class="descrição">
+                    <h2><span class="pnt">.</span>MINHAS <span>EXPERIÊNCIAS</span></h2>
+                    <P> Olá! Meu nome é Carlos, sou o desenvolvedor do portfólio que você está lendo. Atualmente, estou me graduando no curso de Engenharia de Software na faculdade UNIALFA. Tive a oportunidade de projetar este portfólio para demonstrar um pouco do meu conhecimento em desenvolvimento web, além de ser mais um projeto que será adicionado ao meu Github, o qual estará linkado abaixo. Agradeço pelo seu tempo dedicado a visitar este espaço e por estar lendo a minha descrição.</P>
+                    <p> Tenho experiencia já com algumas linguagnes de programação como: 
+                        <img src="img/python-original.png" title="Python" alt="Python" width="30" height="30"/>,
+                        <img src="img/Javascripty.png.png" title="JavaScript" alt="JavaScript" width="30" height="30"/>, 
+                        <img src="img/c.png" title="logoC" alt="logoC" width="30" height="30"/>, 
+                        <img src="img/sqllogo.png" title="logoSQL" alt="logoSQL" width="30" height="30"/>.,No momento que estou editando esse portfólio estou fazendo uma formação com tema: "SQL Database Specialist", por dentro da faculdade já tive experiencia de projetar um Bot focado em compra e venda de moedas on-line</p>
+                        <div class="btnSocial">
+                            <a href="https://www.instagram.com/carloseduardotiago"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://www.linkedin.com/in/carlos-eduardo-7705542b1"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://github.com/CarlosEdu141"><button><i class="bi bi-github"></i></button></a>
+                        </div>
+                </div>
+                
+                <div class="img-descrição">
+                    <img src="img/minha-foto.jpg" alt="minhaFoto">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projetos" id="projetos">
+        <div class="interface">
+            <h2>MEUS<span>PROJETOS</span></h2>
+            <div class="flex">
+                <div class="box">
+                    <a href="https://github.com/CarlosEdu141/Jogo-da-velha--C">
+                    <i class="bi bi-clipboard2-x"></i>
+                    <h3>Jogo da Velha em C</h3>
+                    <p>Pequeno projeto, jogo da velha desenvolvido em C.</p>
+                    </a>
+                </div>
+            
+                <div class="box">
+                    <a href="https://github.com/CarlosEdu141/PagCarrinho-pjt">
+                    <i class="bi bi-basket"></i>
+                    <h3>Página de Carrinho - Projeto</h3>
+                    <p>Front-end de uma página de carrinho de um projeto da faculdade.</p>
+                    </a>
+                </div>
+            
+                <div class="box">
+                    <a href="https://github.com/CarlosEdu141/Desafio-Logica-Dio">
+                    <i class='bx bxs-castle'></i>
+                    <h3>Desafio de Lógica - DIO</h3>
+                    <p>Desafio inicial do curso de Lógica oferecido pela DIO. Desafio de criar um classificador de nível de herói.</p>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section class="contato" id="contatos">
+        <div class="interface">
+            <h2>ENTRE EM <span>CONTATO</span></h2>
+            
+            <form action="https://formsubmit.com/carloseduardots24@gmail.com" method="POST">
+                <input type="text" name="name"  placeholder="Seu nome completo:" required>
+                <input type="text" name="email"  placeholder="Seu e-mail:"required>
+                <input type="text" name="telefone"  placeholder="Seu celular:">
+                <textarea name="message"  placeholder="Sua mensagem:"required></textarea>
+
+                <div class="btnEnviar"><input type="submit" value="ENVIAR"></div>
+
+                <input type="hidden" name="_subject" value="Novo Contato!">
+                <input type="text" name="_honey" style="display:none;">
+                <input type="hidden" name="_captcha" value="false">
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="interface">
+            <div class="rodape">
+                <div class="flex">
+                    <div class="email">
+                        <p><i class="bi bi-envelope-fill"></i><a href="mailto:carloseduardots24@gmail.com">carloseduardots24@gmail.com</a></p>
+                    </div>
+                    <div class="btnSocial">
+                        <a href="https://www.instagram.com/carloseduardotiago"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://www.linkedin.com/in/carlos-eduardo-7705542b1"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://github.com/CarlosEdu141"><button><i class="bi bi-github"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

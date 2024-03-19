@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui borda e preenchimento no cálculo do tamanho do elemento */
+}
+
+body {
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    background-color: #061728; /* Adiciona o background com a cor #090909 */
+}
+
+span{
+    color: aqua;
+}
+
+header a:hover{
+    color: #EEEEEE;
+    transform: scale(1.05);
+}
+
+h2{
+    color: #fff;
+    font-size: 30px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s;
+    display: inline-block;
+
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+button:hover {
+    box-shadow: 0px 0px 10px aqua;
+    color: aqua;
+    transform: scale(1.05);   
+}
+
+.flex{
+    display: flex;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+nav {
+    margin-top: -20px;
+    padding:5% 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0B2F54;
+    height: 13vh;
+    box-shadow: 0 10px 10px #0B2F54
+}
+
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.navbutton {
+    font-size: 17px;
+    background-color: transparent;
+    border: none ;
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer; 
+    transition: .2s;
+}
+
+.navbutton:hover{
+    box-shadow: 0px 5px 10px aqua;
+    color: aqua;
+    transform: scale(1.05);   
+}
+
+
+
+/* Topo do site */
+
+section.topoDoSite {
+    padding: 10% 30% 5% 10% ;
+}
+
+section.topoDoSite .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.txt-topoSite{
+    color: #fff;
+}
+
+.txt-topoSite h1{
+    font-size: 38px;
+    line-height: 39px;
+}
+
+.pnt{
+    font-size: 80px;
+}
+
+.txt-topoSite p {
+    margin: 40px 0;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:#0B2F54;
+    color: #fff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-contato button:hover{
+
+    box-shadow: 0px 0px 10px aqua;
+    color: aqua;
+    transform: scale(1.05); 
+}
+
+
+
+
+/* segunda parte do portifolio*/
+
+section.formações {
+    background-color: #0B2F54;
+    margin-top: 9%;
+    padding: 9% 10% 9% 10%;
+    box-shadow: -1vw -20px 10px 15px #0B2F54, 0 10px 10px 10px #0B2F54;
+}
+
+.descrição .btnSocial button{
+    background-color: #09243e;
+    justify-content: right;
+    color: #fff;
+    transition: .2s;
+}
+
+.descrição p {
+    color: #fff;
+    font-size: 17px;
+    padding-right: 20px;
+    padding-bottom: 34px;
+}
+
+.img-descrição img{
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+
+
+
+/*Projetos*/
+.projetos{
+    margin-bottom: 13%;
+}
+
+.projetos h2{
+    text-align: center;
+    font-size: 38px;
+}
+
+.projetos span{
+    margin:0 15px;
+}
+
+
+
+/*box dos projetos*/
+section.projetos {
+    margin-top: 20px;
+    padding-top: 13%;
+}
+
+section.projetos .flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap; 
+    margin: 0 45px; 
+}
+
+.box {
+    flex: 1;
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+    box-sizing: border-box; 
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px aqua;
+}
+
+.box i {
+    font-size: 70px;
+    color: aqua;
+}
+
+.box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+
+
+/*     PARTE FINAL DO SITE    */
+
+
+
+
+section.contato{
+    box-shadow: 0px -10px 10px #0B2F54;
+    background: #0B2F54;
+    padding: 80PX 4%;
+}
+
+section.contato h2{
+    text-align: center;
+}
+
+section.contato form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: #0000004b;
+    border: 0;
+    border-radius: 15px; 
+    outline: 0;
+    padding: 20px 15px;
+    color: #fff;
+    font-size: 18px;
+    transition: .2s;
+}
+
+form input:hover, form textarea:hover{
+    box-shadow: 0px 0px 10px aqua;
+    transform: scale(1.05);
+}
+
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btnEnviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btnEnviar input{
+    width: 120px;
+    background-color: #061728;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btnEnviar input:hover{
+    color: aqua;
+    box-shadow: 0px 0px 10px aqua;
+    transform: scale(1.05);
+}
+
+
+
+/*       Rodapé     */
+
+
+.btnSocial button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #0B2F54;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 4px;
+    transition: .2s;
+}
+
+footer{
+    padding: 60px 4%;
+    box-shadow: 0px -10px 10px #061728;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .email p i{
+    font-size: 30px;
+    color: #0B2F54;
+    transition: .2s;
+}
+
+footer .email p i:hover{
+    color: aqua;
+    cursor: pointer;
+}
+
+footer .email p a{
+    padding-left: 10px;
+    color: #fff;
+}
