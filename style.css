@@ -236,67 +236,6 @@ section.projetos .flex {
 
 
 /*     PARTE FINAL DO SITE    */
-
-
-
-
-section.contato{
-    box-shadow: 0px -10px 10px #0B2F54;
-    background: #0B2F54;
-    padding: 80PX 4%;
-}
-
-section.contato h2{
-    text-align: center;
-}
-
-section.contato form {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 40px;
-}
-
-form input, form textarea {
-    width: 100%;
-    background-color: #0000004b;
-    border: 0;
-    border-radius: 15px; 
-    outline: 0;
-    padding: 20px 15px;
-    color: #fff;
-    font-size: 18px;
-    transition: .2s;
-}
-
-form input:hover, form textarea:hover{
-    box-shadow: 0px 0px 10px aqua;
-    transform: scale(1.05);
-}
-
-
-form textarea{
-    resize: none;
-    max-height: 200px;
-}
-
-form .btnEnviar{
-    margin-top: 20px;
-    text-align: center;
-}
-
-form .btnEnviar input{
-    width: 120px;
-    background-color: #061728;
-    color: #fff;
-    font-weight: 700;
-    cursor: pointer;
-    transition: .2s;
-}
-
 .btnEnviar input:hover{
     color: aqua;
     box-shadow: 0px 0px 10px aqua;
@@ -313,7 +252,7 @@ form .btnEnviar input{
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: #0B2F54;
+    background-color: #09243e;
     font-size: 22px;
     cursor: pointer;
     margin: 0 4px;
@@ -321,8 +260,10 @@ form .btnEnviar input{
 }
 
 footer{
+    background-color: #0B2F54;
     padding: 60px 4%;
-    box-shadow: 0px -10px 10px #061728;
+    box-shadow: 0px -10px 10px #0B2F54;
+
 }
 
 footer .flex{
@@ -331,7 +272,7 @@ footer .flex{
 
 footer .email p i{
     font-size: 30px;
-    color: #0B2F54;
+    color: #061728;
     transition: .2s;
 }
 
